@@ -1,0 +1,2 @@
+# Praktikum1-JarkomA07
+YOK YOK SEMANGATTT YOKKK
