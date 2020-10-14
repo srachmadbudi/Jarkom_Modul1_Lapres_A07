@@ -55,8 +55,7 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 
 _**Langkah:**_
 1. Untuk mencari IP Address dari `testing.mekanis.me`, maka melakukan ping
-2. Kemudian untuk mengetahui komunikasi dari `testing.mekanis.me` saja, maka filter komunikasi dari IP 157.245.50.224, dengan cara `ip.addr == 157.245.50.224`
-3. Untuk mengetahui paket _basic authentication method_ saja, maka digunakan filter `http.authbasic`
+2. Kemudian untuk mengetahui komunikasi dari `testing.mekanis.me` saja, maka filter komunikasi dari IP 157.245.50.224, dengan cara `ip.addr == 157.245.50.224`. Untuk mengetahui paket _basic authentication method_ saja, maka digunakan filter `http.authbasic`. Sehingga, filter yang digunakan yaitu `ip.addr == 157.245.50.224 && http.authbasic`
 
 ### Nomor 5
  _**Soal:**_\
