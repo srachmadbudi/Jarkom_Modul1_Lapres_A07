@@ -28,7 +28,9 @@ Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 
 _**Langkah:**_
 1. Filter `http.host contains "testing.mekanis.me"`
+![1_1](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/1_1.jpg)
 2. Melakukan follow TCP Stream. Didapatkan hasil webserver yaitu Nginx/1.14.0 (Ubuntu)
+![1_2](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/1_2.jpg)
 
 ### Nomor 2
  _**Soal:**_\
@@ -101,7 +103,7 @@ Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP
 
 _**Langkah:**_
 1. Untuk mencari IP destination dari koneksi FTP dengan Microsoft FTP Service, maka menggunakan filter `ftp contains Microsoft`. Kemudian, klik kanan pada salah satu paket kolom Source, dan klik Apply as Filter - Selected
-2. Untuk mencari file yang didownload, maka filter ditambah menjadi `ftp.request.command == RETR && ip.dst == 198.246. 117.106`. Maka ditemukan file yang didownload adalah `Readne`
+2. Untuk mencari file yang didownload, maka filter ditambah menjadi `ftp.request.command == RETR && ip.dst == 198.246.117.106`. Maka ditemukan file yang didownload adalah `Readne`
 
 ### Nomor 9
  _**Soal:**_\
