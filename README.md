@@ -30,6 +30,7 @@ _**Langkah:**_
 1. Filter `http.host contains "testing.mekanis.me"`
 ![1_1](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/1_1.jpg)
 2. Melakukan follow TCP Stream. Didapatkan hasil webserver yaitu Nginx/1.14.0 (Ubuntu)
+
 ![1_2](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/1_2.jpg)
 
 ### Nomor 2
@@ -39,7 +40,12 @@ Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
 _**Langkah:**_
 1. Klik `File` - `Export Objects` - `HHTP`
 2. Pada `Text Filter`, masukkan nama file `Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg`. Lalu klik `Save`
+
+![2_1](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/2_1.jpg)
+
 3. Hasilnya adalah sebagai berikut:
+
+![2_2](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/2_2.jpg)
 
 ### Nomor 3
  _**Soal:**_\
@@ -47,9 +53,14 @@ Cari username dan password ketika login di "ppid.dpr.go.id"!
 
 _**Langkah:**_
 1. Filter `http.request.method == POST`
+
+![3_1](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/3_1.jpg)
+
 2. Pada HTML Form URL Encoded, ditemukan kalau
     Username: 10pemuda
     Password: guncangdunia
+    
+![3_2](https://raw.githubusercontent.com/prolifel/Jarkom_Modul1_Lapres_A07/main/img/3_2.jpg)
 
 ### Nomor 4
  _**Soal:**_\
@@ -57,7 +68,12 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 
 _**Langkah:**_
 1. Untuk mencari IP Address dari `testing.mekanis.me`, maka melakukan ping
+
+![4_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/4_1.jpg?raw=true)
+
 2. Kemudian untuk mengetahui komunikasi dari `testing.mekanis.me` saja, maka filter komunikasi dari IP 157.245.50.224, dengan cara `ip.addr == 157.245.50.224`. Untuk mengetahui paket _basic authentication method_ saja, maka digunakan filter `http.authbasic`. Sehingga, filter yang digunakan yaitu `ip.addr == 157.245.50.224 && http.authbasic`
+
+![4_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/4_2.jpg?raw=true)
 
 ### Nomor 5
  _**Soal:**_\
