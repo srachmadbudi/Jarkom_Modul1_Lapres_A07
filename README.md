@@ -81,16 +81,31 @@ Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file
 
 _**Langkah:**_
 1. Filter `frame contains "aku.pengen.pw"`
+
+![5_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/5_1.jpg?raw=true)
+
 2. Pada paket GET /networking_meme.png HTTP/1.1, ditemukan Authorization dengan Credentials: kakakgamtenk:hartatahtabermuda. Maka username dan password adalah kakakgamtenk:hartatahtabermuda
+
+![5_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/5_2.jpg?raw=true)
+
 3. Setelah login pada aku.pengen.pw, jawaban soalnya adalah 
 1 : Putih Orange 
+
 2 : Orange  
+
 3 : Putih Hijau 
+
 4 : Biru 
+
 5 : Putih Biru 
+
 6 : Hijau 
+
 7 : Putih Coklat 
+
 8 : Coklat
+
+![5_3](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/5_3.jpg?raw=true)
 
 ### Nomor 6
  _**Soal:**_\
@@ -98,10 +113,24 @@ Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Bu
 
 _**Langkah:**_
 1. Filter `ftp-data.command contains zipkey.txt`
+
+![6_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/6_1.jpg?raw=true)
+
 2. Lalu, follow TCP Stream, dan ditemukan string berupa `hey997400323051` yang adalah password dari Answer.zip
+
+![6_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/6_2.jpg?raw=true)
+
 3. Kemudian, untuk mencari file Answer.pdf, maka dilakukan filter `ftp-data.command contains Answer.zip`
+
+![6_3](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/6_3.jpg?raw=true)
+
 4. Setelah paket ditemukan, follow TCP Stream, dan Show and save data as RAW, dan disimpan dengan nama file `Answer.zip`
+
+![6_4](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/6_4.jpg?raw=true)
+
 5. Ekstrak file tersebut dengan menggunakan password `hey997400323051`. Berikut ini adalah isi dari `Open This.pdf`
+
+![6_5](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/6_5.jpg?raw=true)
 
 ### Nomor 7
  _**Soal:**_\
@@ -110,8 +139,16 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 
 _**Langkah:**_
 1. Filter `ftp-data contains Yes.pdf`
+
+![7_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/7_1.jpg?raw=true)
+
 2. Kemudian, follow TCP Stream, dan Show and save data as RAW, dan disimpan dengan nama file `473.zip`
+
+![7_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/7_2.jpg?raw=true)
+
 3. Ekstrak file tersebut, dan ditemukan Yes.pdf. Berikut ini adalah isi dari Yes.pdf
+
+![7_3](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/7_3.jpg?raw=true)
 
 ### Nomor 8
  _**Soal:**_\
@@ -119,7 +156,12 @@ Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP
 
 _**Langkah:**_
 1. Untuk mencari IP destination dari koneksi FTP dengan Microsoft FTP Service, maka menggunakan filter `ftp contains Microsoft`. Kemudian, klik kanan pada salah satu paket kolom Source, dan klik Apply as Filter - Selected
+
+![8_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/8_1.jpg?raw=true)
+
 2. Untuk mencari file yang didownload, maka filter ditambah menjadi `ftp.request.command == RETR && ip.dst == 198.246.117.106`. Maka ditemukan file yang didownload adalah `Readne`
+
+![8_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/8_2.jpg?raw=true)
 
 ### Nomor 9
  _**Soal:**_\
@@ -127,5 +169,10 @@ Cari username dan password ketika login FTP pada localhost!
 
 _**Langkah:**_
 1. Untuk mencari username dari FTP, maka menggunakan filter `ftp.request.command eq USER`. Didapatkan username nya adalah `dhana`
+
+![9_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/9_1.jpg?raw=true)
+
 2. Untuk mencari password dari FTP, maka menggunakan filter `ftp.request.command eq PASS`. Didapatkan username nya adalah `dhana123`
+
+![9_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/9_2.jpg?raw=true)
 
