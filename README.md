@@ -176,3 +176,60 @@ _**Langkah:**_
 
 ![9_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/9_2.jpg?raw=true)
 
+### Nomor 10
+_**Soal:**_\
+Cari file .pdf di wireshark lalu download dan buka file tersebut!
+clue: "25 50 44 46"
+
+_**Langkah:**_
+1. http.request.method == "GET"
+2. Follow Tcp stream file pdfnya 
+3. Show and save data as raw 
+4. Save as diberi nama dengan format  ( .pdf	)
+Hasilnya 
+
+### Nomor 10
+_**Soal:**_\
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+Tcp.port == 21
+
+### Nomor 11
+_**Soal:**_\
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+Tcp.port == 21
+
+
+### Nomor 12
+_**Soal:**_\
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+
+Tcp.srcport == 80
+
+### Nomor 13
+_**Soal:**_\
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
+tcp.dstport == 43
+
+### Nomor 14
+_**Soal:**_\
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+_**Langkah:**_
+1. Liat ip di cmd lewat perintah ipconfig
+2. Lalu buka di wireshark dengan menggunakan perintah ip.src == 192.168.0.3 (yaitu ip kita)
+
+
+
+### Nomor 15
+_**Soal:**_\
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+
+
+_**Langkah:**_
+1. Ping monta.if.its.ac.id agar mengetahui ip nya di cmd
+2. Lalu gunakan ip.dst == 103.94.190.11 
+
+
