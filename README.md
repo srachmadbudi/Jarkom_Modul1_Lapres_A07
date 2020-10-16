@@ -188,16 +188,16 @@ _**Langkah:**_
 
 2. Follow Tcp stream file pdfnya 
 
-[10_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/10_2.jpg)
+![10_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/10_2.jpg)
 
 3. Show and save data as raw 
 
-[10_3](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/10_3.jpg)
+![10_3](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/10_3.jpg)
 
 4. Save as diberi nama dengan format  ( .pdf	)
 Hasilnya 
 
-[10_4](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/10_4.jpg)
+![10_4](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/10_4.jpg)
 
 ### Nomor 11
 _**Soal:**_\
@@ -205,7 +205,7 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 Tcp.port == 21
 
-[11_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/11_1.jpg)
+![11_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/11_1.jpg)
 
 
 ### Nomor 12
@@ -214,7 +214,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
 Tcp.srcport == 80
 
-[12_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/12_1.jpg)
+![12_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/12_1.jpg)
 
 
 ### Nomor 13
@@ -223,7 +223,7 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
 tcp.dstport == 43
 
-[13_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/13_1.jpg)
+![13_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/13_1.jpg)
 
 ### Nomor 14
 _**Soal:**_\
@@ -232,11 +232,11 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 _**Langkah:**_
 1. Liat ip di cmd lewat perintah ipconfig
 
-[14_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/14_1.jpg)
+![14_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/14_1.jpg)
 
 2. Lalu buka di wireshark dengan menggunakan perintah ip.src == 192.168.0.3 (yaitu ip kita)
 
-[14_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/14_2.jpg)
+![14_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/14_2.jpg)
 
 
 
@@ -248,10 +248,10 @@ Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.a
 _**Langkah:**_
 1. Ping monta.if.its.ac.id agar mengetahui ip nya di cmd
 
-[15_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/15_1.jpg)
+![15_1](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/15_1.jpg)
 
 2. Lalu gunakan ip.dst == 103.94.190.11 
 
-[15_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/15_2.jpg)
+![15_2](https://github.com/prolifel/Jarkom_Modul1_Lapres_A07/blob/main/img/15_2.jpg)
 
 
